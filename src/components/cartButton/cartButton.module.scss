@@ -1,0 +1,23 @@
+.cartContainer{
+    cursor: pointer;
+    .cartIcon{
+        position: relative;
+        .badge{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 8px;
+            background-color: #FFF200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -2px;
+            right: 2px;
+            span{
+                color: #3C3C3B;
+                font-size: 10px;
+                font-weight: 700;
+            }
+        }
+    }
+}

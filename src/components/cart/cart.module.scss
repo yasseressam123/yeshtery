@@ -1,0 +1,47 @@
+@import "../../App.scss";
+
+.cartTitle{
+    text-align: center;
+    color: $secondary;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.cartSummary{
+    color: $primary;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.cartTotal{
+    text-align: center;
+    color: #1D1D1B;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 18px 0px;
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        border-radius: 24px;
+        border: 0px;
+        outline: none;
+        font-size: 11px;
+        font-weight: 700;
+        width: 150px;
+        height: 45px;
+    }
+    .review{
+        background: #FFF200 0% 0% no-repeat padding-box;
+        color:  $primary;
+    }
+    .checkout{
+        color: #FFFFFF;
+        background: $secondary 0% 0% no-repeat padding-box;
+    }
+}
+.cart-items{
+    padding: 0px;
+}

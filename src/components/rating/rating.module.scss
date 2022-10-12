@@ -1,0 +1,16 @@
+@import "../../App.scss";
+
+.rating-container{
+    display: flex;
+    align-items: center;
+    margin: 13px 0px; 
+    .rating-value{
+        color:  $primary;
+        margin: 0px 16px;
+        font-weight: 700;
+    }
+    .rating-no{
+        color: #575756;
+        font-weight: 500;
+    }
+}

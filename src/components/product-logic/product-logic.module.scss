@@ -1,0 +1,141 @@
+@import "../../App.scss";
+
+.product-container{
+    .title-container{
+        .product-name{
+            color: #1D1D1B;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        .product-type{
+            font-size: 16px;
+            font-weight: 700;
+            color: #A7A9AC;
+        }
+    }
+    .product-price{
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e4e4e6;
+        margin-bottom: 15px;
+        .actual-price{
+            color: $secondary;
+            font-size: 22px;
+            font-weight: 700;
+            sub{
+                font-weight: normal;
+            }
+        }
+        .discout-price{
+            color: #A7A9AC;
+            text-decoration: line-through;
+            margin: 0px 20px;
+        }
+        .discout{
+            background: #FFF200 0% 0% no-repeat padding-box;
+            border-radius: 3px;
+            width: 77px;
+            height: 27px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                color:  $primary;
+                font-size: 14px;
+            }
+        }
+    }
+    .product-size{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e4e4e6;
+        margin-bottom: 15px;
+        div{
+            width: 60px;
+            height: 60px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 0.5px solid #D9D9D9;
+            border-radius: 30px;
+            margin-right: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            p{
+                color: $secondary;
+                font-size: 10px;
+                font-weight: 500;
+            }
+        }
+        .active{
+            background: #ECECEC 0% 0% no-repeat padding-box;
+            p{
+                color: #1D1D1B;
+            }
+        }
+    }
+    .quantity-container{
+        .quantity-main{
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px !important;
+        }
+        .quantity-logic{
+            width: 252px;
+            height: 48px;
+            background: #F5F5F5 0% 0% no-repeat padding-box;
+            border: 0.5px solid #D9D9D9;
+            border-radius: 24px;
+            display: flex;
+            padding: 5px;
+            .quantity-calc{
+                background: #FFF200 0% 0% no-repeat padding-box;
+                width: 37px;
+                height: 37px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border: 0px;
+                outline: none;
+            }
+            .quantity-value{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    color: $secondary;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .quantity-btns{
+        margin-top: 27px;
+        display: flex;
+        align-items: center;
+        button{
+            border-radius: 27px;
+            width: 252px;
+            height: 54px;
+            border: 0px;
+            outline: none;
+            font-weight: 700;
+        }
+        .addCart{
+            background: $secondary 0% 0% no-repeat padding-box;
+            color: white;
+            margin-right: 32px;
+        }
+        .pickup{
+            background: #FFF200 0% 0% no-repeat padding-box;
+            color:  $primary;
+        }
+    }
+}

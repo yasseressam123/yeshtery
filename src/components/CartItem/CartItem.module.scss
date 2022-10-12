@@ -1,0 +1,49 @@
+@import "../../App.scss";
+
+.cardContainer{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.75px solid #ECECEC;
+    border-radius: 7px;
+    padding: 8px;
+    .cardImg{
+        margin-right: 15px;
+        img{
+            border-radius: 10px;
+        }
+    }
+    .cardName{
+        color: #1D1D1B;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 5px !important;
+    }
+    .cardQuantity{
+        color: #3C3C3B;
+        font-size: 11px;
+        font-weight: 700;
+        margin-bottom: 5px !important;
+    }
+    .cardBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cardPrice{
+            color: $secondary;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .cardRemove button{
+            border: 0px;
+            outline: none;
+            font-size: 10px;
+            color: $secondary;
+            width: 80px;
+            height: 24px;
+            background: #FFF200 0% 0% no-repeat padding-box;
+            border-radius: 12px;
+            font-weight: 700;
+        }
+    }
+}
